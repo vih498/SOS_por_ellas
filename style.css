@@ -23,20 +23,22 @@ header { position: fixed; top:0; left:0; width:100%; background:#6a0dad; color:#
 }
 
 .btn-denuncie {
-  display: inline-block;
+  display: inline-block; 
   width: 175px;
   height: 175px;
-  line-height: 150px;
   background: #6a0dad;
+  line-height: 25px;
   color: #fff;
   border: none;
   border-radius: 50%;
   font-weight: bold;
   font-size: 25px;
+  justify-content: center;
   cursor: pointer;
   text-align: center;
   transition: 0.3s;
 }
+
 .btn-denuncie:hover {
   background: #500a8c;
 }
