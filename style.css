@@ -55,8 +55,14 @@ header { position: fixed; top:0; left:0; width:100%; background:#6a0dad; color:#
   cursor: pointer;
   transition: 0.3s;
 }
-.btn-submit:hover {
-  background: #500a8c;
+
+.btn-submit:hover { background: #500a8c; }
+
+#acompanhamentoRadios {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .banner-preto { background:#000; color:#fff; padding:10px; text-align:center; }
