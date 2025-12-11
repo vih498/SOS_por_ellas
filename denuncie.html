@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denúncia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="header">
+    <h1>S.O.S por Ellas</h1>
+  </header>
+
+  <div class="spacer"></div>
+
+  <section class="form-section">
+    <h2>Formulário de Denúncia</h2>
+    <form id="denunciaForm">
+
+      <label>
+        <input type="checkbox" name="anonima" />
+        Quero fazer a denúncia de forma anônima
+      </label>
+
+      <label>Tipo de violência
+        <select name="tipo_violencia" required>
+          <option value="">Selecione</option>
+          <option value="fisica">Física</option>
+          <option value="psicologica">Psicológica</option>
+          <option value="sexual">Sexual</option>
+          <option value="patrimonial">Patrimonial</option>
+          <option value="moral">Moral</option>
+          <option value="stalking">Stalking</option>
+        </select>
+      </label>
+
+      <label>Descreva o que aconteceu
+        <textarea name="descricao" rows="5" required></textarea>
+      </label>
+
+      <label>Local do ocorrido
+        <input type="text" name="local" required />
+      </label>
+
+      <label>Quando aconteceu?
+        <input type="date" name="data_ocorrido" required />
+      </label>
+
+      <label>Informações sobre o agressor (opcional)
+        <input type="text" name="agressor" />
+      </label>
+
+      <label>Anexar arquivos/provas
+        <input type="file" name="arquivo" />
+      </label>
+
+      <div id="acompanhamentoContainer">
+        <p>Deseja acompanhamento?</p>
+        <label>
+          <input type="radio" name="acompanhamento" value="sim" /> Sim
+        </label>
+        <label>
+          <input type="radio" name="acompanhamento" value="nao" checked /> Não
+        </label>
+
+        <div id="acompanhamentoInfo" style="display:none;">
+          <label>Nome
+            <input type="text" name="acomp_nome" />
+          </label>
+          <label>E-mail
+            <input type="email" name="acomp_email" />
+          </label>
+          <label>Telefone
+            <input type="tel" name="acomp_telefone" />
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-denuncie" style="width:auto;height:auto;padding:12px 20px;">Enviar denúncia</button>
+    </form>
+  </section>
+
+  <script src="form.js"></script>
+</body>
+</html>
