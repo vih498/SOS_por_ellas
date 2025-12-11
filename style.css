@@ -3,13 +3,15 @@ header { position: fixed; top:0; left:0; width:100%; background:#6a0dad; color:#
 .spacer { height:50px; }
 
 .banner-cinza {
-  background:#e0e0e0;
-  color:#6a0dad;
-  padding:25px;
-  text-align:center;
+  background: 
+    linear-gradient(rgba(250, 200, 250, 0.5), rgba(250, 200, 250, 0.5)),
+    url('banner.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
 }
 .titulo-banner {
-  font-size:75px;
+  font-size:100px;
   font-weight: 750;
   color:#6a0dad;
   margin-bottom:10px;

@@ -19,7 +19,16 @@ const unidades = [
   { nome: "Centro de Referência e Atenção às Mulheres em Situação de Violência Doméstica e Sexista (Cram)", endereco: "Rua Bernardo Guimarães, 470, - Santo Amaro, Recife - PE, 50050-440", lat:-8.05356284669294, lng:-34.88867121711385},
 ];
 
-unidades.forEach(u => {
-  L.marker([u.lat, u.lng]).addTo(map)
+const redIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+    unidades.forEach(u => {
+  L.marker([u.lat, u.lng], { icon: redIcon }).addTo(map)
     .bindPopup(`<b>${u.nome}</b><br>${u.endereco}`);
 });
